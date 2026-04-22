@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sushitech Automatic Transducers Pvt. Ltd. | Safe Load Indicator Manufacturer</title>
+<meta name="description" content="Sushitech Automatic Transducers Pvt. Ltd. — manufacturer of Safe Load Indicators, Crane Safety Systems, Wind Sensors & Industrial Electronics. Based in Vasai, Maharashtra." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<style>
+/* ──────────────────────────────────────────
+   VARIABLES  (WordPress-palette feel)
+────────────────────────────────────────── */
+:root{
+  --primary:#1a4fa0;
+  --primary-dark:#133d80;
+  --primary-light:#2563c7;
+  --accent:#e8f0fc;
+  --white:#ffffff;
+  --off-white:#f7f8fc;
+  --border:#e2e6ef;
+  --text:#2d3748;
+  --muted:#64748b;
+  --light-muted:#94a3b8;
+  --heading:#1a202c;
+  --shadow-xs:0 1px 3px rgba(0,0,0,.08);
+  --shadow-sm:0 2px 8px rgba(0,0,0,.08);
+  --shadow-md:0 4px 20px rgba(0,0,0,.10);
+  --shadow-lg:0 8px 32px rgba(0,0,0,.12);
+  --radius:6px;
+  --radius-lg:10px;
+  --transition:.22s ease;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Open Sans',sans-serif;font-size:15px;color:var(--text);background:var(--white);line-height:1.7;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--primary);text-decoration:none;transition:color var(--transition)}
+a:hover{color:var(--primary-light)}
+ul{list-style:none}
+h1,h2,h3,h4,h5{font-family:'Poppins',sans-serif;color:var(--heading);line-height:1.25}
+
+/* ── UTILITIES ── */
+.container{max-width:1140px;margin:0 auto;padding:0 20px}
+.section{padding:72px 0}
+.section-alt{background:var(--off-white)}
+.section-center{text-align:center}
+.eyebrow{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--primary);background:var(--accent);padding:4px 12px;border-radius:4px;margin-bottom:10px}
+.section-heading{font-size:clamp(1.5rem,3vw,2rem);font-weight:700;color:var(--heading);margin-bottom:10px}
+.section-sub{font-size:.95rem;color:var(--muted);max-width:580px;line-height:1.75}
+.section-center .section-sub{margin:0 auto}
+.divider{width:44px;height:3px;background:var(--primary);border-radius:2px;margin:14px 0 22px}
+.section-center .divider{margin:14px auto 22px}
+.btn{display:inline-flex;align-items:center;gap:7px;padding:11px 24px;border-radius:var(--radius);font-family:'Poppins',sans-serif;font-size:.85rem;font-weight:600;border:2px solid transparent;cursor:pointer;transition:var(--transition);white-space:nowrap}
+.btn-primary{background:var(--primary);color:#fff;border-color:var(--primary)}
+.btn-primary:hover{background:var(--primary-dark);border-color:var(--primary-dark);color:#fff}
+.btn-outline{background:transparent;color:var(--primary);border-color:var(--primary)}
+.btn-outline:hover{background:var(--primary);color:#fff}
+.btn-white{background:#fff;color:var(--primary);border-color:#fff}
+.btn-white:hover{background:var(--accent);color:var(--primary-dark);border-color:var(--accent)}
+.btn-outline-white{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.btn-outline-white:hover{background:rgba(255,255,255,.12);border-color:#fff}
+
+/* ── FADE-IN ON SCROLL ── */
+.fade-up{opacity:0;transform:translateY(24px);transition:opacity .55s ease,transform .55s ease}
+.fade-up.in{opacity:1;transform:none}
+
+/* ────────────────────────────────
+   TOP BAR
+──────────────────────────────── */
+.topbar{background:var(--primary-dark);padding:7px 0;font-size:.78rem;color:rgba(255,255,255,.8)}
+.topbar .container{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px}
+.topbar a{color:rgba(255,255,255,.8)}
+.topbar a:hover{color:#fff}
+.topbar i{margin-right:5px;font-size:.75rem}
+.tb-left,.tb-right{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.tb-sep{color:rgba(255,255,255,.25)}
+
+/* ────────────────────────────────
+   HEADER / NAV
+──────────────────────────────── */
+.site-header{position:sticky;top:0;z-index:999;background:#fff;border-bottom:1px solid var(--border);box-shadow:var(--shadow-xs)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:66px;max-width:1140px;margin:0 auto;padding:0 20px}
+
+/* Logo */
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo-mark{width:42px;height:42px;background:var(--primary);border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.logo-mark svg{width:22px;height:22px;fill:#fff}
+.logo-text .brand{font-family:'Poppins',sans-serif;font-size:1rem;font-weight:800;color:var(--heading);line-height:1.15;letter-spacing:-.01em}
+.logo-text .tagline{font-size:.62rem;color:var(--muted);letter-spacing:.05em;font-weight:600;text-transform:uppercase}
+
+/* Main nav */
+.main-nav{display:flex;align-items:center;gap:2px}
+.main-nav a{font-size:.82rem;font-weight:600;color:var(--text);padding:6px 13px;border-radius:4px;transition:var(--transition);font-family:'Poppins',sans-serif}
+.main-nav a:hover{color:var(--primary);background:var(--accent)}
+.main-nav a.active{color:var(--primary)}
+.header-cta-btn{margin-left:12px}
+
+/* Hamburger */
+.hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px}
+.hamburger span{display:block;width:22px;height:2px;background:var(--heading);border-radius:2px;transition:var(--transition)}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* Mobile nav */
+.mobile-menu{display:none;position:fixed;inset:0;background:#fff;z-index:998;flex-direction:column;align-items:center;justify-content:center;gap:6px}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-family:'Poppins',sans-serif;font-size:1.4rem;font-weight:700;color:var(--heading);padding:8px 24px}
+.mobile-menu a:hover{color:var(--primary)}
+.mobile-close{position:absolute;top:18px;right:20px;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--heading)}
+
+/* ────────────────────────────────
+   HERO
+──────────────────────────────── */
+.hero{position:relative;background:var(--primary-dark);overflow:hidden;padding:90px 0}
+.hero-bg-img{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=75') center/cover no-repeat;opacity:.18}
+.hero .container{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.hero-content{}
+.hero-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.9);font-size:.72rem;font-weight:700;letter-spacing:.10em;text-transform:uppercase;padding:5px 13px;border-radius:4px;margin-bottom:20px}
+.hero h1{font-size:clamp(1.75rem,3.5vw,2.6rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:16px}
+.hero h1 span{color:#7eb8f7}
+.hero p{font-size:.97rem;color:rgba(255,255,255,.75);margin-bottom:28px;max-width:480px;line-height:1.75}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px}
+.hero-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);border-radius:var(--radius-lg);padding:28px;backdrop-filter:blur(6px)}
+.hero-stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
+.hero-stat{background:rgba(255,255,255,.08);border-radius:var(--radius);padding:16px;text-align:center}
+.hero-stat .num{font-family:'Poppins',sans-serif;font-size:1.75rem;font-weight:800;color:#fff;line-height:1}
+.hero-stat .num span{color:#7eb8f7;font-size:1.1rem}
+.hero-stat .lbl{font-size:.7rem;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.06em;margin-top:3px;font-weight:600}
+.hero-tagline{text-align:center;font-size:.8rem;color:rgba(255,255,255,.5);font-style:italic;border-top:1px solid rgba(255,255,255,.1);padding-top:14px}
+.hero-tagline strong{color:rgba(255,255,255,.75);font-style:normal}
+
+/* ────────────────────────────────
+   TRUST STRIP
+──────────────────────────────── */
+.trust-strip{background:#fff;border-bottom:1px solid var(--border);padding:16px 0}
+.trust-strip .container{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.trust-item{display:flex;align-items:center;gap:8px;font-size:.78rem;font-weight:600;color:var(--muted)}
+.trust-item i{color:var(--primary);font-size:.95rem}
+
+/* ────────────────────────────────
+   ABOUT
+──────────────────────────────── */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+.about-img-wrap{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:16/11;background:var(--border)}
+.about-img-wrap img{width:100%;height:100%;object-fit:cover}
+.about-badges{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+.badge-chip{display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:var(--primary);border:1px solid #c7d9f8;border-radius:4px;padding:6px 12px;font-size:.78rem;font-weight:700}
+.badge-chip i{font-size:.85rem}
+.about-list{display:flex;flex-direction:column;gap:10px;margin-top:20px}
+.about-list li{display:flex;align-items:flex-start;gap:10px;font-size:.88rem;color:var(--text)}
+.about-list li i{color:var(--primary);margin-top:3px;flex-shrink:0;font-size:.8rem}
+.founder-box{margin-top:22px;padding:16px;border:1px solid var(--border);border-radius:var(--radius);background:var(--off-white);display:flex;align-items:center;gap:14px}
+.founder-icon{width:44px;height:44px;background:var(--primary);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.1rem;flex-shrink:0}
+.founder-box strong{display:block;font-size:.9rem;color:var(--heading);font-family:'Poppins',sans-serif;font-weight:700}
+.founder-box span{font-size:.75rem;color:var(--muted)}
+
+/* ────────────────────────────────
+   PRODUCTS
+──────────────────────────────── */
+.products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px}
+.product-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius-lg);padding:26px 22px;transition:box-shadow var(--transition),border-color var(--transition),transform var(--transition)}
+.product-card:hover{box-shadow:var(--shadow-md);border-color:#c7d9f8;transform:translateY(-3px)}
+.product-icon-wrap{width:52px;height:52px;background:var(--accent);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.product-icon-wrap i{font-size:1.3rem;color:var(--primary)}
+.product-card h3{font-size:.98rem;font-weight:700;color:var(--heading);margin-bottom:8px}
+.product-card p{font-size:.82rem;color:var(--muted);line-height:1.65}
+.product-enquire{display:inline-flex;align-items:center;gap:5px;font-size:.78rem;font-weight:700;color:var(--primary);margin-top:14px;transition:gap var(--transition)}
+.product-card:hover .product-enquire{gap:8px}
+.product-top-bar{height:3px;background:var(--border);border-radius:6px 6px 0 0;transition:background var(--transition)}
+.product-card:hover .product-top-bar{background:var(--primary)}
+.product-card-inner{border:1px solid var(--border);border-top:none;border-radius:0 0 var(--radius-lg) var(--radius-lg);padding:24px 22px;background:#fff;transition:border-color var(--transition)}
+.product-card:hover .product-card-inner{border-color:#c7d9f8}
+
+/* ────────────────────────────────
+   SERVICES
+──────────────────────────────── */
+.services-layout{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
+.service-row{display:flex;flex-direction:column;gap:14px}
+.service-card{display:flex;gap:16px;padding:18px;border:1px solid var(--border);border-radius:var(--radius);background:#fff;transition:border-color var(--transition),box-shadow var(--transition)}
+.service-card:hover{border-color:#c7d9f8;box-shadow:var(--shadow-sm)}
+.service-icon{width:42px;height:42px;background:var(--primary);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1rem;flex-shrink:0}
+.service-card h4{font-size:.9rem;font-weight:700;color:var(--heading);margin-bottom:3px}
+.service-card p{font-size:.8rem;color:var(--muted);line-height:1.6}
+.why-box{background:var(--primary);border-radius:var(--radius-lg);padding:36px 30px}
+.why-box h3{font-size:1.2rem;font-weight:700;color:#fff;margin-bottom:22px}
+.why-list{display:flex;flex-direction:column;gap:11px}
+.why-row{display:flex;align-items:center;gap:12px;padding:11px 14px;background:rgba(255,255,255,.08);border-radius:var(--radius)}
+.why-row i{color:#7eb8f7;width:16px;text-align:center;flex-shrink:0;font-size:.9rem}
+.why-row span{font-size:.83rem;color:rgba(255,255,255,.88);font-weight:600}
+
+/* ────────────────────────────────
+   GALLERY
+──────────────────────────────── */
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:auto;gap:12px;margin-top:32px}
+.g-item{border-radius:var(--radius);overflow:hidden;position:relative;background:var(--border)}
+.g-item img{width:100%;height:180px;object-fit:cover;display:block;transition:transform .4s ease}
+.g-item:hover img{transform:scale(1.05)}
+.g-item:nth-child(1){grid-column:span 2;grid-row:span 2}
+.g-item:nth-child(1) img{height:100%;min-height:240px}
+.g-overlay{position:absolute;inset:0;background:rgba(26,79,160,.55);opacity:0;transition:opacity .3s;display:flex;align-items:center;justify-content:center}
+.g-item:hover .g-overlay{opacity:1}
+.g-overlay i{font-size:1.4rem;color:#fff}
+
+/* ────────────────────────────────
+   TESTIMONIALS
+──────────────────────────────── */
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px}
+.testi-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px;transition:box-shadow var(--transition)}
+.testi-card:hover{box-shadow:var(--shadow-md)}
+.stars{color:#f59e0b;font-size:.78rem;margin-bottom:12px;letter-spacing:2px}
+.testi-card p{font-size:.83rem;color:var(--muted);line-height:1.7;font-style:italic;margin-bottom:18px;border-bottom:1px solid var(--border);padding-bottom:16px}
+.testi-author{display:flex;align-items:center;gap:11px}
+.t-avatar{width:38px;height:38px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:700;flex-shrink:0}
+.t-name{font-size:.83rem;font-weight:700;color:var(--heading);font-family:'Poppins',sans-serif}
+.t-title{font-size:.72rem;color:var(--light-muted)}
+
+/* ────────────────────────────────
+   CTA BANNER
+──────────────────────────────── */
+.cta-banner{background:linear-gradient(90deg,var(--primary-dark),var(--primary-light));padding:60px 0;text-align:center}
+.cta-banner h2{font-size:clamp(1.4rem,2.5vw,1.9rem);font-weight:700;color:#fff;margin-bottom:10px}
+.cta-banner p{color:rgba(255,255,255,.75);font-size:.92rem;margin-bottom:26px}
+.cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* ────────────────────────────────
+   CONTACT
+──────────────────────────────── */
+.contact-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:44px;align-items:start}
+.contact-info-cards{display:flex;flex-direction:column;gap:12px;margin-top:22px}
+.ci-card{display:flex;gap:14px;align-items:flex-start;padding:14px 16px;border:1px solid var(--border);border-radius:var(--radius);background:#fff;transition:border-color var(--transition)}
+.ci-card:hover{border-color:#c7d9f8}
+.ci-icon{width:38px;height:38px;background:var(--accent);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:.9rem;flex-shrink:0}
+.ci-label{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--primary);margin-bottom:2px}
+.ci-val{font-size:.85rem;color:var(--text);line-height:1.5}
+.ci-val a{color:var(--text)}
+.ci-val a:hover{color:var(--primary)}
+.social-links{display:flex;gap:8px;margin-top:18px}
+.soc-btn{width:36px;height:36px;border-radius:var(--radius);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.88rem;background:#fff;transition:var(--transition)}
+.soc-btn:hover{background:var(--primary);color:#fff;border-color:var(--primary)}
+.contact-form-box{background:#fff;border:1px solid var(--border);border-radius:var(--radius-lg);padding:32px;box-shadow:var(--shadow-sm)}
+.form-box-title{font-size:1.05rem;font-weight:700;color:var(--heading);margin-bottom:20px;font-family:'Poppins',sans-serif;padding-bottom:14px;border-bottom:1px solid var(--border)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-group{display:flex;flex-direction:column;gap:5px;margin-bottom:14px}
+.form-group label{font-size:.75rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.form-group input,.form-group select,.form-group textarea{padding:9px 13px;border:1px solid var(--border);border-radius:var(--radius);font-family:'Open Sans',sans-serif;font-size:.85rem;color:var(--text);background:#fff;outline:none;transition:border-color .2s,box-shadow .2s}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(26,79,160,.09)}
+.form-group textarea{resize:none}
+.map-embed{margin-top:18px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border)}
+.map-embed iframe{display:block;width:100%;height:200px}
+
+/* ────────────────────────────────
+   FOOTER
+──────────────────────────────── */
+.site-footer{background:#111827;padding:56px 0 0}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.07)}
+.footer-logo{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.footer-logo-mark{width:36px;height:36px;background:var(--primary);border-radius:6px;display:flex;align-items:center;justify-content:center}
+.footer-logo-mark svg{width:18px;height:18px;fill:#fff}
+.footer-brand-name{font-family:'Poppins',sans-serif;font-size:.88rem;font-weight:800;color:#fff;line-height:1.2}
+.footer-about{font-size:.8rem;color:rgba(255,255,255,.45);line-height:1.75;margin-bottom:18px}
+.footer-soc{display:flex;gap:7px}
+.fs-btn{width:32px;height:32px;background:rgba(255,255,255,.07);border-radius:4px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);font-size:.8rem;transition:var(--transition)}
+.fs-btn:hover{background:var(--primary);color:#fff}
+.footer-col-title{font-family:'Poppins',sans-serif;font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.85);margin-bottom:16px}
+.footer-nav{display:flex;flex-direction:column;gap:8px}
+.footer-nav a{font-size:.8rem;color:rgba(255,255,255,.45);transition:color var(--transition)}
+.footer-nav a:hover{color:rgba(255,255,255,.85)}
+.footer-contact-list{display:flex;flex-direction:column;gap:10px}
+.fc-item{display:flex;gap:9px;align-items:flex-start}
+.fc-item i{color:rgba(255,255,255,.35);font-size:.75rem;margin-top:3px;flex-shrink:0}
+.fc-item a,.fc-item p{font-size:.78rem;color:rgba(255,255,255,.45);line-height:1.55;transition:color var(--transition)}
+.fc-item a:hover{color:rgba(255,255,255,.85)}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;padding:16px 0;flex-wrap:wrap;gap:8px}
+.footer-bottom p{font-size:.74rem;color:rgba(255,255,255,.25)}
+.footer-bottom-links{display:flex;gap:18px}
+.footer-bottom-links a{font-size:.72rem;color:rgba(255,255,255,.25);transition:color var(--transition)}
+.footer-bottom-links a:hover{color:rgba(255,255,255,.65)}
+
+/* ────────────────────────────────
+   FLOATING / STICKY
+──────────────────────────────── */
+.float-wrap{position:fixed;bottom:24px;right:20px;z-index:990;display:flex;flex-direction:column;gap:10px}
+.f-btn{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.15rem;color:#fff;box-shadow:0 3px 14px rgba(0,0,0,.2);transition:transform var(--transition);border:none;cursor:pointer;text-decoration:none}
+.f-btn:hover{transform:scale(1.1)}
+.f-wa{background:#25d366}
+.f-call{background:var(--primary)}
+.sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:989;display:flex}
+.sticky-cta a{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;padding:13px;font-size:.82rem;font-weight:700;color:#fff}
+.sticky-cta a:first-child{background:var(--primary)}
+.sticky-cta a:last-child{background:#25d366}
+.sticky-cta a:first-child{border-right:1px solid rgba(255,255,255,.15)}
+
+/* ────────────────────────────────
+   RESPONSIVE
+──────────────────────────────── */
+@media(max-width:960px){
+  .hero .container{grid-template-columns:1fr}
+  .hero-card{display:none}
+  .about-grid{grid-template-columns:1fr}
+  .about-img-wrap{display:none}
+  .products-grid{grid-template-columns:1fr 1fr}
+  .services-layout{grid-template-columns:1fr}
+  .testi-grid{grid-template-columns:1fr 1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .topbar .tb-right{display:none}
+  .main-nav,.header-cta-btn{display:none}
+  .hamburger{display:flex}
+  .products-grid{grid-template-columns:1fr}
+  .testi-grid{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:1fr 1fr}
+  .g-item:nth-child(1){grid-column:span 2}
+  .footer-grid{grid-template-columns:1fr}
+  .trust-strip .container{justify-content:center}
+  .form-row{grid-template-columns:1fr}
+  .float-wrap{bottom:72px}
+}
+@media(max-width:400px){
+  .hero h1{font-size:1.6rem}
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+    <div class="tb-left">
+      <span><i class="fas fa-phone-alt"></i><a href="tel:+918698345111">+91 86983 45111</a></span>
+      <span class="tb-sep">|</span>
+      <span><i class="fas fa-envelope"></i><a href="mailto:sales@sushitechindia.com">sales@sushitechindia.com</a></span>
+    </div>
+    <div class="tb-right">
+      <span><i class="fas fa-clock"></i>Mon–Sat: 10 AM – 7 PM</span>
+      <span class="tb-sep">|</span>
+      <a href="https://www.instagram.com/sushitech.india" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://www.facebook.com/share/1BKTf2V8oc" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <div class="logo-mark">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      </div>
+      <div class="logo-text">
+        <span class="brand">Sushitech</span>
+        <span class="tagline">Quality First, Service Always</span>
+      </div>
+    </a>
+
+    <nav class="main-nav">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#products">Products</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="tel:+918698345111" class="btn btn-primary header-cta-btn" style="font-size:.78rem;padding:9px 18px">
+      <i class="fas fa-phone-alt"></i> Call Now
+    </a>
+
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></button>
+  <a href="#home" onclick="closeMenu()">Home</a>
+  <a href="#about" onclick="closeMenu()">About Us</a>
+  <a href="#products" onclick="closeMenu()">Products</a>
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#gallery" onclick="closeMenu()">Gallery</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+  <a href="tel:+918698345111" class="btn btn-primary" style="margin-top:16px" onclick="closeMenu()">
+    <i class="fas fa-phone-alt"></i> +91 86983 45111
+  </a>
+</div>
+
+<!-- ═══════════════════════════════
+     HERO
+════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-bg-img"></div>
+  <div class="container">
+    <div class="hero-content fade-up">
+      <div class="hero-badge"><i class="fas fa-shield-alt"></i>&nbsp; Certified Industrial Safety Equipment</div>
+      <h1>Advanced <span>Safe Load Indicator</span> Solutions for Maximum Safety</h1>
+      <p>Manufacturer &amp; supplier of high-precision crane safety systems, SLIs, boom lift indicators, wind sensors, and industrial electronics. Based in Maharashtra, serving Pan-India.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-white"><i class="fas fa-paper-plane"></i> Get a Quote</a>
+        <a href="tel:+918698345111" class="btn btn-outline-white"><i class="fas fa-phone-alt"></i> +91 86983 45111</a>
+      </div>
+    </div>
+    <div class="hero-card fade-up" style="transition-delay:.15s">
+      <div class="hero-stats-grid">
+        <div class="hero-stat"><div class="num">7<span>+</span></div><div class="lbl">Years Experience</div></div>
+        <div class="hero-stat"><div class="num">500<span>+</span></div><div class="lbl">Units Deployed</div></div>
+        <div class="hero-stat"><div class="num">24<span>/7</span></div><div class="lbl">Support</div></div>
+        <div class="hero-stat"><div class="num">100<span>%</span></div><div class="lbl">Safety Focus</div></div>
+      </div>
+      <div class="hero-tagline"><strong>Quality First, Service Always</strong> — Sushitech Automatic Transducers Pvt. Ltd.</div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="container">
+    <div class="trust-item"><i class="fas fa-award"></i> ISO-Grade Manufacturing</div>
+    <div class="trust-item"><i class="fas fa-map-marker-alt"></i> Made in India</div>
+    <div class="trust-item"><i class="fas fa-tools"></i> Custom SLI Solutions</div>
+    <div class="trust-item"><i class="fas fa-truck"></i> Pan-India Delivery</div>
+    <div class="trust-item"><i class="fas fa-headset"></i> 24×7 Technical Support</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════
+     ABOUT
+════════════════════════════════ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap fade-up">
+        <img src="https://images.unsplash.com/photo-1581094294329-c8112a89af12?auto=format&fit=crop&w=800&q=75" alt="Industrial operations" loading="lazy" />
+      </div>
+      <div class="fade-up" style="transition-delay:.1s">
+        <span class="eyebrow">About Us</span>
+        <h2 class="section-heading">Trusted Safety Equipment Manufacturer Since 2016</h2>
+        <div class="divider"></div>
+        <p style="font-size:.9rem;color:var(--muted);line-height:1.8;margin-bottom:14px">
+          <strong>Sushitech Automatic Transducers Private Limited</strong> was established in 2016 by <strong>Er. Om Prakash Tiwari</strong>, an electronics and instrumentation engineer with a passion for industrial safety. The company was formally incorporated in 2018 and is headquartered in Vasai, Maharashtra.
+        </p>
+        <p style="font-size:.88rem;color:var(--muted);line-height:1.8">
+          We specialize in designing and manufacturing cost-effective, reliable, and innovative safety solutions for the heavy lifting industry — combining electronics, software, and mechatronics expertise to deliver products that protect lives and equipment on job sites across India.
+        </p>
+        <div class="about-badges">
+          <div class="badge-chip"><i class="fas fa-microchip"></i> Electronics</div>
+          <div class="badge-chip"><i class="fas fa-code"></i> Software</div>
+          <div class="badge-chip"><i class="fas fa-cogs"></i> Mechatronics</div>
+        </div>
+        <ul class="about-list">
+          <li><i class="fas fa-check-circle"></i> Manufacturer &amp; supplier of Safe Load Indicators for cranes, boom lifts, and man lifts</li>
+          <li><i class="fas fa-check-circle"></i> Cost-effective products without compromise on safety or accuracy</li>
+          <li><i class="fas fa-check-circle"></i> Custom-built solutions for diverse crane models and capacities</li>
+          <li><i class="fas fa-check-circle"></i> Pan-India installation and service network</li>
+        </ul>
+        <div class="founder-box">
+          <div class="founder-icon"><i class="fas fa-user-tie"></i></div>
+          <div>
+            <strong>Er. Om Prakash Tiwari</strong>
+            <span>Founder &amp; Managing Director — Electronics &amp; Instrumentation Engineer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     PRODUCTS
+════════════════════════════════ -->
+<section class="section section-alt" id="products">
+  <div class="container">
+    <div class="section-center fade-up">
+      <span class="eyebrow">Our Products</span>
+      <h2 class="section-heading">Precision-Engineered Safety Systems</h2>
+      <div class="divider"></div>
+      <p class="section-sub">High-precision systems designed to monitor load, angle, and safety conditions in real time — built for reliability in demanding industrial environments.</p>
+    </div>
+    <div class="products-grid">
+
+      <div class="product-card fade-up" style="transition-delay:.05s">
+        <div class="product-top-bar"></div>
+        <div class="product-card-inner">
+          <div class="product-icon-wrap"><i class="fas fa-weight-hanging"></i></div>
+          <h3>Safe Load Indicator (SLI)</h3>
+          <p>Real-time load monitoring that alerts crane operators before overload conditions occur. Compatible with all major crane types.</p>
+          <a href="#contact" class="product-enquire">Enquire Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="product-card fade-up" style="transition-delay:.10s">
+        <div class="product-top-bar"></div>
+        <div class="product-card-inner">
+          <div class="product-icon-wrap"><i class="fas fa-drafting-compass"></i></div>
+          <h3>Crane Load Indicator</h3>
+          <p>Provides continuous display of load weight, radius, and permissible limits for tower and mobile cranes with built-in alarm outputs.</p>
+          <a href="#contact" class="product-enquire">Enquire Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="product-card fade-up" style="transition-delay:.15s">
+        <div class="product-top-bar"></div>
+        <div class="product-card-inner">
+          <div class="product-icon-wrap"><i class="fas fa-arrow-up"></i></div>
+          <h3>Boom Lift SLI</h3>
+          <p>Specialized indicator for boom lifts and aerial work platforms. Monitors platform load, boom angle, and extension in real time.</p>
+          <a href="#contact" class="product-enquire">Enquire Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="product-card fade-up" style="transition-delay:.20s">
+        <div class="product-top-bar"></div>
+        <div class="product-card-inner">
+          <div class="product-icon-wrap"><i class="fas fa-tachometer-alt"></i></div>
+          <h3>Hydra Crane Indicator</h3>
+          <p>Purpose-built for hydraulic cranes used in construction. Accurate load calculations with anti-tip protection features included.</p>
+          <a href="#contact" class="product-enquire">Enquire Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="product-card fade-up" style="transition-delay:.25s">
+        <div class="product-top-bar"></div>
+        <div class="product-card-inner">
+          <div class="product-icon-wrap"><i class="fas fa-wind"></i></div>
+          <h3>Wind Speed Sensors</h3>
+          <p>Industrial-grade anemometers for cranes and construction sites. Triggers alerts when wind speeds exceed safe thresholds.</p>
+          <a href="#contact" class="product-enquire">Enquire Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="product-card fade-up" style="transition-delay:.30s">
+        <div class="product-top-bar"></div>
+        <div class="product-card-inner">
+          <div class="product-icon-wrap"><i class="fas fa-desktop"></i></div>
+          <h3>Touch Screen Displays</h3>
+          <p>Rugged, sunlight-readable industrial touch screen display units for cranes with intuitive operator interfaces.</p>
+          <a href="#contact" class="product-enquire">Enquire Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     SERVICES + WHY CHOOSE US
+════════════════════════════════ -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="services-layout">
+      <div class="fade-up">
+        <span class="eyebrow">Our Services</span>
+        <h2 class="section-heading">End-to-End Support</h2>
+        <div class="divider"></div>
+        <p style="font-size:.88rem;color:var(--muted);margin-bottom:24px;line-height:1.75">From initial consultation and custom development to installation, calibration, and ongoing maintenance — we support you at every stage.</p>
+        <div class="service-row">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-pencil-ruler"></i></div>
+            <div>
+              <h4>Custom SLI Development</h4>
+              <p>Bespoke safe load indicators engineered to your exact crane model, capacity, and site requirements.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-wrench"></i></div>
+            <div>
+              <h4>Installation &amp; Commissioning</h4>
+              <p>Professional on-site installation by trained engineers with complete calibration and system validation.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-clipboard-check"></i></div>
+            <div>
+              <h4>Maintenance &amp; AMC</h4>
+              <p>Scheduled preventive maintenance and annual maintenance contracts for continued peak performance.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-headset"></i></div>
+            <div>
+              <h4>24×7 Technical Support</h4>
+              <p>Round-the-clock phone and remote assistance from our expert technical team whenever you need it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-up" style="transition-delay:.12s">
+        <div class="why-box">
+          <h3>Why Choose Sushitech?</h3>
+          <div class="why-list">
+            <div class="why-row"><i class="fas fa-check"></i><span>7+ Years of Industry Experience</span></div>
+            <div class="why-row"><i class="fas fa-check"></i><span>Trusted by Leading Industrial Companies</span></div>
+            <div class="why-row"><i class="fas fa-check"></i><span>Advanced Technology &amp; In-house R&amp;D</span></div>
+            <div class="why-row"><i class="fas fa-check"></i><span>Cost-Effective Without Compromising Safety</span></div>
+            <div class="why-row"><i class="fas fa-check"></i><span>24×7 Customer &amp; Technical Support</span></div>
+            <div class="why-row"><i class="fas fa-check"></i><span>On-Time Delivery — Guaranteed</span></div>
+            <div class="why-row"><i class="fas fa-check"></i><span>Pan-India Installation Network</span></div>
+            <div class="why-row"><i class="fas fa-check"></i><span>Made in India — Quality Assured</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     GALLERY
+════════════════════════════════ -->
+<section class="section section-alt" id="gallery">
+  <div class="container">
+    <div class="section-center fade-up">
+      <span class="eyebrow">Gallery</span>
+      <h2 class="section-heading">Our Work in Action</h2>
+      <div class="divider"></div>
+      <p class="section-sub">Real products, real installations, real industrial environments across India.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="g-item fade-up">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=75" alt="Crane operations" loading="lazy"/>
+        <div class="g-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="g-item fade-up" style="transition-delay:.05s">
+        <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=600&q=75" alt="Control electronics" loading="lazy"/>
+        <div class="g-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="g-item fade-up" style="transition-delay:.10s">
+        <img src="https://images.unsplash.com/photo-1565440962783-f87efdea99fd?auto=format&fit=crop&w=600&q=75" alt="Industrial sensors" loading="lazy"/>
+        <div class="g-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="g-item fade-up" style="transition-delay:.15s">
+        <img src="https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?auto=format&fit=crop&w=600&q=75" alt="Factory floor" loading="lazy"/>
+        <div class="g-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="g-item fade-up" style="transition-delay:.20s">
+        <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?auto=format&fit=crop&w=800&q=75" alt="Heavy industry" loading="lazy"/>
+        <div class="g-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="g-item fade-up" style="transition-delay:.25s">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=75" alt="Display unit" loading="lazy"/>
+        <div class="g-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="g-item fade-up" style="transition-delay:.30s">
+        <img src="https://images.unsplash.com/photo-1569517282132-25d22f4573e6?auto=format&fit=crop&w=600&q=75" alt="On-site work" loading="lazy"/>
+        <div class="g-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     TESTIMONIALS
+════════════════════════════════ -->
+<section class="section" id="clients">
+  <div class="container">
+    <div class="section-center fade-up">
+      <span class="eyebrow">Client Testimonials</span>
+      <h2 class="section-heading">What Our Clients Say</h2>
+      <div class="divider"></div>
+      <p class="section-sub">Trusted by crane operators, site engineers, and safety managers across India.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card fade-up" style="transition-delay:.05s">
+        <div class="stars">★★★★★</div>
+        <p>"We've installed Sushitech SLIs across our fleet of 12 hydra cranes. The accuracy is outstanding and the support team is incredibly responsive. Highly recommend for any construction company."</p>
+        <div class="testi-author">
+          <div class="t-avatar">RK</div>
+          <div><div class="t-name">Rajesh Kumar</div><div class="t-title">Operations Manager — Heavy Lifting Co., Mumbai</div></div>
+        </div>
+      </div>
+      <div class="testi-card fade-up" style="transition-delay:.10s">
+        <div class="stars">★★★★★</div>
+        <p>"Excellent quality at very competitive pricing. The custom boom lift indicator was designed exactly to our specifications. Professional installation team, great after-sales service."</p>
+        <div class="testi-author">
+          <div class="t-avatar">AS</div>
+          <div><div class="t-name">Anil Sharma</div><div class="t-title">Safety Head — Infrastructure Corp., Pune</div></div>
+        </div>
+      </div>
+      <div class="testi-card fade-up" style="transition-delay:.15s">
+        <div class="stars">★★★★★</div>
+        <p>"The wind sensors and load indicators from Sushitech have helped us maintain zero safety incidents on our sites for over two years. True value for money with great ongoing support."</p>
+        <div class="testi-author">
+          <div class="t-avatar">MV</div>
+          <div><div class="t-name">Mohan Verma</div><div class="t-title">Site Engineer — Coastal Infra, Navi Mumbai</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <div class="container fade-up">
+    <h2>Ready to Upgrade Your Crane Safety Systems?</h2>
+    <p>Talk to our engineers today and get a customized SLI solution designed for your equipment.</p>
+    <div class="cta-btns">
+      <a href="#contact" class="btn btn-white"><i class="fas fa-paper-plane"></i> Get a Free Quote</a>
+      <a href="tel:+918698345111" class="btn btn-outline-white"><i class="fas fa-phone-alt"></i> +91 86983 45111</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════
+     CONTACT
+════════════════════════════════ -->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <div class="fade-up" style="margin-bottom:36px">
+      <span class="eyebrow">Contact Us</span>
+      <h2 class="section-heading">Get in Touch</h2>
+      <div class="divider"></div>
+      <p class="section-sub">Available Monday–Saturday, 10 AM to 7 PM. Emergency technical support available 24×7.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="fade-up">
+        <div class="contact-info-cards">
+          <div class="ci-card">
+            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div><div class="ci-label">Address</div><div class="ci-val">Vasai / Nalasopara, Palghar District<br/>Maharashtra, India – 401201</div></div>
+          </div>
+          <div class="ci-card">
+            <div class="ci-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <div class="ci-label">Phone</div>
+              <div class="ci-val">
+                <a href="tel:+918698345111">+91 86983 45111</a><br/>
+                <a href="tel:+918447640620">+91 84476 40620</a>
+              </div>
+            </div>
+          </div>
+          <div class="ci-card">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div><div class="ci-label">Email</div><div class="ci-val"><a href="mailto:sales@sushitechindia.com">sales@sushitechindia.com</a></div></div>
+          </div>
+          <div class="ci-card">
+            <div class="ci-icon"><i class="fas fa-clock"></i></div>
+            <div><div class="ci-label">Working Hours</div><div class="ci-val">Mon–Sat: 10:00 AM – 7:00 PM<br/><strong style="color:var(--primary)">24×7 Emergency Technical Support</strong></div></div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://www.facebook.com/share/1BKTf2V8oc" target="_blank" class="soc-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/sushitech.india" target="_blank" class="soc-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/918698345111" target="_blank" class="soc-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/company/sushitech-automatic-transducers-pvt-ltd" target="_blank" class="soc-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120565.97938050817!2d72.77699734174804!3d19.44072399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bff5caef0c2d%3A0xa3de27cba6a53f20!2sVasai-Virar%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Sushitech Location">
+          </iframe>
+        </div>
+      </div>
+      <div class="contact-form-box fade-up" style="transition-delay:.12s">
+        <div class="form-box-title"><i class="fas fa-envelope" style="color:var(--primary);margin-right:8px"></i>Send Us a Message</div>
+        <form id="contactForm" onsubmit="submitForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label>Phone Number *</label>
+              <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" name="email" placeholder="you@company.com" />
+            </div>
+            <div class="form-group">
+              <label>Company</label>
+              <input type="text" name="company" placeholder="Your company name" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Product / Service</label>
+            <select name="product">
+              <option value="">— Select a product or service —</option>
+              <option>Safe Load Indicator (SLI)</option>
+              <option>Crane Load Indicator</option>
+              <option>Boom Lift SLI</option>
+              <option>Hydra Crane Indicator</option>
+              <option>Wind Speed Sensor</option>
+              <option>Touch Screen Display</option>
+              <option>Custom SLI Development</option>
+              <option>Maintenance / AMC</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" rows="4" placeholder="Describe your requirements — crane type, capacity, quantity, etc."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center" id="submitBtn">
+            <i class="fas fa-paper-plane"></i> Send Enquiry
+          </button>
+        </form>
+        <div id="successMsg" style="display:none;margin-top:16px;padding:13px 16px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:var(--radius);font-size:.85rem;color:#166534">
+          <i class="fas fa-check-circle" style="margin-right:7px;color:#16a34a"></i>
+          Thank you! Your enquiry has been received. We'll get back to you within 24 hours.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     FOOTER
+════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <div class="footer-logo-mark">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <div class="footer-brand-name">Sushitech Automatic<br/>Transducers Pvt. Ltd.</div>
+        </div>
+        <p class="footer-about">Manufacturer and supplier of Safe Load Indicators, Crane Safety Systems, and Industrial Electronics since 2016. Based in Vasai, Maharashtra.</p>
+        <div class="footer-soc">
+          <a href="https://www.facebook.com/share/1BKTf2V8oc" target="_blank" class="fs-btn"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/sushitech.india" target="_blank" class="fs-btn"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/918698345111" target="_blank" class="fs-btn"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/company/sushitech-automatic-transducers-pvt-ltd" target="_blank" class="fs-btn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Quick Links</div>
+        <div class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#products">Products</a>
+          <a href="#services">Services</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Products</div>
+        <div class="footer-nav">
+          <a href="#products">Safe Load Indicator</a>
+          <a href="#products">Crane Load Indicator</a>
+          <a href="#products">Boom Lift SLI</a>
+          <a href="#products">Hydra Crane Indicator</a>
+          <a href="#products">Wind Speed Sensors</a>
+          <a href="#products">Touch Screen Displays</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact Info</div>
+        <div class="footer-contact-list">
+          <div class="fc-item"><i class="fas fa-map-marker-alt"></i><p>Vasai / Nalasopara, Palghar District, Maharashtra – 401201</p></div>
+          <div class="fc-item"><i class="fas fa-phone-alt"></i><div><a href="tel:+918698345111">+91 86983 45111</a><br/><a href="tel:+918447640620">+91 84476 40620</a></div></div>
+          <div class="fc-item"><i class="fas fa-envelope"></i><a href="mailto:sales@sushitechindia.com">sales@sushitechindia.com</a></div>
+          <div class="fc-item"><i class="fas fa-clock"></i><p>Mon–Sat: 10 AM – 7 PM<br/>24×7 Emergency Support</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Sushitech Automatic Transducers Private Limited. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="float-wrap">
+  <a href="https://wa.me/918698345111?text=Hello%20Sushitech%2C%20I%20need%20information%20about%20your%20Safe%20Load%20Indicators." target="_blank" class="f-btn f-wa" title="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="tel:+918698345111" class="f-btn f-call" title="Call Now">
+    <i class="fas fa-phone-alt"></i>
+  </a>
+</div>
+
+<!-- MOBILE STICKY BAR -->
+<div class="sticky-cta">
+  <a href="tel:+918698345111"><i class="fas fa-phone-alt"></i> Call Now</a>
+  <a href="https://wa.me/918698345111" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+</div>
+
+<script>
+// Sticky header scroll
+window.addEventListener('scroll', () => {
+  document.getElementById('site-header').style.boxShadow =
+    window.scrollY > 30 ? '0 2px 12px rgba(0,0,0,.10)' : '0 1px 3px rgba(0,0,0,.08)';
+});
+
+// Hamburger menu
+const hb = document.getElementById('hamburger');
+const mm = document.getElementById('mobileMenu');
+document.getElementById('mobileClose').onclick = closeMenu;
+hb.onclick = () => {
+  hb.classList.toggle('open');
+  mm.classList.toggle('open');
+  document.body.style.overflow = mm.classList.contains('open') ? 'hidden' : '';
+};
+function closeMenu() {
+  hb.classList.remove('open');
+  mm.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// Scroll reveal
+const io = new IntersectionObserver(entries => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) setTimeout(() => e.target.classList.add('in'), i * 55);
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) { e.preventDefault(); window.scrollTo({ top: t.offsetTop - 70, behavior: 'smooth' }); }
+  });
+});
+
+// Active nav
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.main-nav a');
+window.addEventListener('scroll', () => {
+  let cur = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 90) cur = s.id; });
+  navLinks.forEach(l => {
+    l.classList.toggle('active', l.getAttribute('href') === '#' + cur);
+  });
+});
+
+// Form submit
+function submitForm(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+  btn.disabled = true;
+  setTimeout(() => {
+    e.target.style.display = 'none';
+    document.getElementById('successMsg').style.display = 'block';
+  }, 1300);
+}
+</script>
+
+<!-- SCHEMA MARKUP -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"Sushitech Automatic Transducers Private Limited",
+  "url":"https://www.sushitechindia.in",
+  "description":"Manufacturer and supplier of Safe Load Indicators, Crane Safety Systems, Sensors and Industrial Electronics.",
+  "foundingDate":"2018",
+  "founders":[{"@type":"Person","name":"Er. Om Prakash Tiwari"}],
+  "address":{"@type":"PostalAddress","addressLocality":"Vasai","addressRegion":"Maharashtra","postalCode":"401201","addressCountry":"IN"},
+  "contactPoint":[
+    {"@type":"ContactPoint","telephone":"+91-8698345111","contactType":"sales"},
+    {"@type":"ContactPoint","telephone":"+91-8447640620","contactType":"customer support"}
+  ],
+  "sameAs":[
+    "https://www.instagram.com/sushitech.india",
+    "https://www.facebook.com/share/1BKTf2V8oc"
+  ]
+}
+</script>
+</body>
+</html>
